@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+
+    --jobnamefont: "Outfit";
+}
+
+/* mybookings header */
+
+.mybookings-header-cont {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/main-breacrumb-Image.jpg');
+}
+
+.mybookings-header-writing {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 0px 70px;
+
+}
+
+.mybookings-header-writing h1 {
+    color: white;
+    font-family: var(--jobnamefont);
+    font-size: 60px;
+}
+
+.mybookings-header-writing p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: var(--jobnamefont);
+}
+
+.mybooking-sect1 {
+    padding: 30px;
+}
+
+.service-details {
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.service-image {
+    flex: .8;
+}
+
+.service-right {
+    flex: 1;
+
+}
+
+.service-right h1 {
+    margin-bottom: 20px;
+    font-family: var(--jobnamefont);
+}
+
+.service-right p {
+    width: 500px;
+    font-family: var(--jobnamefont);
+    color: black;
+}
+
+.service-right p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+

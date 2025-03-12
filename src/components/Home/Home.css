@@ -1,0 +1,571 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --themefont: "Edu AU VIC WA NT Arrows";
+    --jobnamefont: "Outfit";
+}
+
+/* header section */
+
+.header-container {
+    height: 720px;
+    background-image: url('../../assets/H1-slider-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.header-body-container {
+    color: white;
+    position: relative;
+    top: 26%;
+    padding-left: 80px;
+
+}
+
+.header-body h3 {
+    padding-bottom: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.header-body h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 15px;
+}
+
+.header-body p {
+    padding-bottom: 10px;
+    font-family: var(--jobnamefont)
+}
+
+.rating {
+    margin-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+@media (max-width: 480px) {
+    .header-container {
+        height: 400px;
+    }
+
+    .header-body-container {
+        padding: 0 20px;
+    }
+
+    .header-body h3 {
+        font-size: 16px;
+    }
+
+    .header-body h1 {
+        font-size: 28px;
+    }
+
+    .header-body p {
+        font-size: 14px;
+    }
+
+    .rating {
+        font-size: 14px;
+    }
+}
+
+/* header is over */
+
+
+/* section 2 starts */
+
+.sect2-container {
+    display: flex;
+}
+
+.sect2-left {
+    flex: 1;
+}
+
+.sect2-right {
+    flex: 1;
+}
+
+.sect2-left-top {
+    color: black;
+    padding-left: 100px;
+    margin-left: 70px;
+    padding-top: 90px;
+}
+
+.sect2-left-top p {
+    font-size: 18px;
+    padding-bottom: 10px;
+    color: rgb(100, 97, 97);
+
+}
+
+.sect2-left-top h1 {
+    font-size: 50px;
+    font-family: var(--jobnamefont)
+}
+
+.sect2-left-writing {
+    width: 180px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 400px;
+    bottom: 400px;
+    background-color: rgb(221, 170, 2);
+    border-radius: 17px;
+}
+
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+.sect2-left-writing h1 {
+    font-size: 35px;
+    padding: 10px;
+    font-family: var(--jobnamefont);
+}
+
+.sect2-left-writing p {
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 22px;
+    color: black;
+    font-family: var(--jobnamefont);
+}
+
+.sect2-left-bottom {
+    display: flex;
+    padding-left: 80px;
+    margin-left: 90px;
+    margin-top: 80px;
+}
+
+.sect2-oneimg {
+    flex: 1;
+
+}
+
+.sect2-twoimg {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.sect2-img3 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.sect2-right-top {
+    padding: 13px;
+    padding-left: 32px;
+    margin-top: 110px;
+    margin-left: 40px;
+    border-left: 1px solid;
+
+}
+
+.sect2-right-top p {
+    line-height: 24px;
+    color: rgb(100, 97, 97);
+    font-size: 17px;
+    font-family: var(--jobnamefont);
+}
+
+.sect2-right-bottom {
+    margin-left: 50px;
+    padding-left: 30px;
+    margin-top: 50px;
+    padding-top: 50px;
+
+}
+
+.sect2-right-bottom h1 {
+    margin-bottom: 15px;
+    font-family: var(--jobnamefont);
+}
+
+.sect2-right-bottom div {
+    padding-bottom: 40px;
+}
+
+.sect2-right-bottom-writing p {
+    color: rgb(100, 97, 97);
+
+}
+
+.sect2-for-booking {
+    margin-left: 80px;
+    padding: 10px;
+    background-color: rgb(255, 196, 0);
+    border-radius: 30px;
+    width: 200px;
+    text-align: center;
+}
+
+.sect2-for-booking h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.sect2-for-booking p {
+    font-family: var(--jobnamefont);
+    color: black;
+}
+
+
+/* section  3 starts*/
+
+.sect3-top {
+    height: 420px;
+    background-color: rgb(255, 196, 0);
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+.sect3-top-left {
+
+    padding-left: 60px;
+    margin-left: 30px;
+    padding-top: 60px;
+}
+
+.sect3-top-left p {
+    color: rgb(100, 97, 97);
+    font-size: 17px;
+    font-family: var(--jobnamefont);
+}
+
+.sect3-top-left h1 {
+    font-size: 43px;
+    font-family: var(--jobnamefont);
+}
+
+.sect3-top-right {
+    height: 100px;
+    border-left: 1px solid;
+    margin: 90px 0px 0px 0px;
+    padding: 18px 40px 0px 40px;
+}
+
+.sect3-top-right p {
+    color: rgb(100, 97, 97);
+}
+
+.sect3-bottom {
+    position: relative;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+}
+
+.sect3-maping-service {
+    display: flex;
+    align-items: center;
+    width: 370px;
+    margin-left: 5px;
+  
+}
+
+.sect3-maping-service h1 {
+    cursor: pointer;
+    padding-top: 20px;
+    padding-left: 5px;
+    font-weight: 300;
+    font-family: var(--jobnamefont);
+
+}
+
+.sect3-maping-service h1:hover {
+    color: rgb(255, 196, 0);
+}
+
+.sect3-maping-service p {
+    font-weight: 300;
+    padding-left: 5px;
+    padding-top: 7px;
+    font-family: var(--jobnamefont);
+    color: rgb(100, 97, 97);
+}
+
+.sect3-booknow button {
+    font-size: 20px;
+    font-family: var(--jobnamefont);
+    margin-top: 10px;
+    border-radius: 20px;
+
+}
+
+.sect3-view-all {
+    position: relative;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.sect3-view-all button {
+    margin-bottom: 50px;
+    width: 180px;
+    height: 60px;
+    color: white;
+    background-color: black;
+    border-radius: 32px;
+    font-family: var(--jobnamefont);
+}
+
+.sect3-view-all button:hover {
+    color: black;
+    background-color: rgb(255, 196, 0);
+}
+
+
+/*  section 4  starts*/
+
+.sect4-container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.sect4-container div {
+    border-radius: 30px;
+    justify-items: center;
+    align-content: center;
+    width: 310px;
+    height: 340px;
+
+}
+
+.sect4-container div p {
+    color: black;
+}
+
+.sect4-first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(255, 196, 0);
+
+}
+
+.sect4-first-child p:first-child {
+    font-weight: 300;
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-family: var(--jobnamefont);
+    font-size: 19px;
+    color: rgb(100, 97, 97);
+}
+
+.sect4-first-child h1 {
+    margin-left: 40px;
+    font-family: var(--jobnamefont);
+    font-size: 50px;
+}
+
+.sect4-first-child p:last-child {
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 40px;
+    font-size: 16px;
+    font-family: var(--jobnamefont);
+    color: rgb(100, 97, 97);
+}
+
+.sect4-other-child {
+    margin-left: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sect4-other-child h2 {
+    font-size: 27px;
+    font-family: var(--jobnamefont);
+}
+
+.sect4-other-child p:last-child {
+    padding-top: 15px;
+    color: rgb(100, 97, 97);
+    font-size: 15px;
+    font-family: var(--jobnamefont);
+}
+
+
+/* section 5 starts */
+
+.sect5-container {
+    background-color: #222222;
+}
+
+.sect5-top {
+    margin-top: 50px;
+    padding-top: 80px;
+}
+
+.sect5-writing {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sect5-writing-left {
+    padding-top: 40px;
+
+}
+
+.sect5-writing-left h3 {
+    padding-bottom: 10px;
+    color: rgb(255, 196, 0);
+    font-family: var(--jobnamefont);
+
+}
+
+.sect5-writing-left h1 {
+    color: white;
+    font-size: 40px;
+    font-family: var(--jobnamefont);
+}
+
+.sect5-writing-right {
+    border-left: 1px solid;
+    padding-left: 40px;
+    margin: 70px 0px 0px 40px;
+    border-color: white;
+
+}
+
+.sect5-writing-right p:first-child {
+    padding-bottom: 50px;
+    color: whitesmoke;
+}
+
+.sect5-writing-right img {
+    padding-bottom: 10px;
+}
+
+.sect5-numbers {
+    padding: 40px 0px 50px 0px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+
+}
+
+.sect5-bottum h1 {
+    font-size: 70px;
+    font-family: var(--jobnamefont);
+    color: rgb(255, 196, 0);
+}
+
+.sect5-bottum p {
+    font-family: var(--jobnamefont);
+    font-size: 18px;
+}
+
+
+/* section 6 */
+
+.sect6-container {
+    padding: 20px;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.sect6-left {
+    margin-top: 50px;
+    border-radius: 30px;
+    width: 550px;
+    height: 750px;
+    background-image: url('../../assets/accordian-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.sect6-right {
+    margin-top: 45px;
+}
+
+.sect6-right h1 {
+    font-size: 40px;
+    font-family: var(--jobnamefont);
+}
+
+.sect6-right p {
+    font-size: 18px;
+    font-family: var(--jobnamefont);
+    color: rgb(158, 157, 157);
+}
+
+.sect6-questions {
+    margin-top: 30px;
+    width: 600px;
+}
+
+.accordion-item {
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    width: 600px;
+
+}
+
+.accordion-item:hover {
+    border-color: yellow;
+}
+
+.accordion-header {
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    background-color: #ebebeb;
+    border-radius: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+
+}
+
+.accordion-content p {
+    color: rgb(143, 142, 142);
+}
+
+.accordion-content.show {
+    max-height: 200px;
+    padding: 10px 15px;
+}
+
+.accordion-header h2 {
+    font-weight: 300;
+    font-family: var(--jobnamefont);
+    font-size: 22px;
+}

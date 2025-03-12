@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --mainfont: "Outfit";
+}
+
+.navbar {
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 196, 0);
+
+}
+
+.search-inpt {
+    height: 15px;
+    width: fit-content;
+    color: rgb(69, 67, 67);
+    font-size: larger;
+    border-color: #FFD700;
+    background-color: rgba(255, 255, 255, 0.349);
+
+}
+
+.search-inpt:hover {
+    border-color: black;
+
+}
+
+::placeholder {
+    color: rgb(69, 67, 67);
+
+}
+
+.navbar-details {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+
+}
+
+.navbar-details ol {
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+
+}
+
+.profile {
+    margin: 10px 10px 0px 10px;
+}
+
+.search {
+    position: relative;
+}
+
+.search-result {
+    background-color: rgba(0, 0, 0, 0.693);
+    border-radius: 1rem;
+    position: absolute;
+    top: 0;
+    margin-top: 5px;
+    width: 100%;
+
+}
+
+.search-result-cont {
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.search-result-cont h2 {
+    color: rgb(199, 195, 195);
+    font-family: var(--mainfont);
+}
+
+.navbar-details ol a {
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+    font-family: var(--mainfont);
+
+}
+
+.navbar-details ol a:hover {
+    color: white;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+.logo h1 {
+    cursor: pointer;
+    font-size: 33px;
+    color: black;
+    font-family: var(--themefont);
+
+}
+
+.profile h1 i:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 260px;
+        flex-direction: column;
+        align-items: start;
+        padding-left: 20px;
+    }
+
+    .navbar-details ol {
+        gap: 0px;
+        flex-direction: column;
+    }
+
+    .search-inpt {
+        margin: 0;
+        width: 90%;
+    }
+    .profile h1 i {
+        cursor: pointer;
+        color: white;
+    }
+
+    .logo h1 {
+        font-size: 20px;
+    }
+
+    .navbar-details ol a {
+        color: white;
+    }
+}

@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --jobnamefont: "Outfit"
+}
+
+.header-cont {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/main-breacrumb-Image.jpg');
+}
+
+.header-writing {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 0px 70px;
+    /* padding-left: 40px; */
+    /* margin-left: 50px; */
+
+
+}
+
+.header-writing h1 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.header-writing p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* section twoo */
+
+
+.service-sect2-top-writing {
+    margin: 60px;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.service-hr {
+
+    margin: 0px 70px 70px 77px;
+
+}
+
+.service-sect2-top h4 {
+    color: rgb(100, 97, 97);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.service-sect2-top h1 {
+    padding-top: 12px;
+    font-size: 45px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.job-maping-container {
+    width: 100%;
+    /* padding: 30px; */
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.maping-jobs {
+    width: 420px;
+}
+
+.maping-jobs h1 {
+    padding-top: 20px;
+    margin-left: 7px;
+    font-weight: 300;
+    font-family: var(--jobnamefont);
+}
+
+.maping-jobs p {
+    padding-top: 7px;
+    margin-left: 7px;
+    font-weight: 200;
+    font-size: 16px;
+    font-family: var(--jobnamefont);
+    color: black;
+}
+
+.service-book button {
+    margin-top: 20px;
+    width: 420px;
+    border-radius: 20px;
+}
+
+
+/* section 2 over */
+
+
+.service-sect3-container {
+    margin-top: 140px;
+    height: 850px;
+    background-color: rgb(255, 196, 0);
+}
+
+.service-sect3-top {
+    display: flex;
+    margin-top: 70px;
+    padding-top: 70px;
+    justify-content: flex-start;
+}
+
+.service-sect3-top-left {
+    /* border: 1px solid; */
+    flex: 1;
+    margin-left: 50px;
+}
+
+.service-sect3-top-left p {
+    font-size: 18px;
+    color: black;
+
+    font-family: var(--jobnamefont);
+}
+
+.service-sect3-top-left h1 {
+    font-size: 50px;
+    font-family: var(--jobnamefont);
+}
+
+.service-sect3-top-right {
+    margin-top: 30px;
+    height: 100px;
+    display: flex;
+    border-left: 1px solid;
+
+    align-items: center;
+    flex: 1;
+    padding-left: 50px;
+}
+
+.service-sect3-top-right p {
+    color: rgb(100, 97, 97);
+    font-family: var(--jobnamefont);
+
+}
+
+.service-sect3-bottum {
+    margin: 70px 0px 100px 0px;
+}
+
+.review-cont {
+
+    margin: 50px 0px 0px 20px;
+}
+
+.review-details {
+    width: 460px;
+    height: 280px;
+    border-radius: 30px;
+    background-color: white;
+    text-align: center;
+    transition: background-color 0.5s, color 0.3s;
+
+
+}
+
+.review-details:hover  {
+    color: white;
+    background-color: black;
+}
+
+
+.review-details h1 {
+    transition: color 0.3s;
+    padding-top: 60px;
+    font-family: var(--jobnamefont);
+}
+
+.review-details p {
+    transition: color 0.3s;
+    font-size: 15px;
+    font-family: var(--jobnamefont);
+    padding: 10px 20px 0px 20px;
+    color: rgb(100, 97, 97);
+
+}
+
+.review-img img {
+    position: relative;
+    bottom: 50px;
+    left: 160px;
+}
+
+.slick-dots {
+
+    text-align: center;
+}
+
+.slick-dots li.slick-active button {
+
+    background-color: black;
+    opacity: 1;
+    transform: scale(1.2);
+
+}
+
+.slick-prev li.slick-active button {
+
+    background-color: white;
+
+}

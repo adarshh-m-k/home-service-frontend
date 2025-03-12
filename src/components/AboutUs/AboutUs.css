@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.about-header-cont {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../../assets/main-breacrumb-Image.jpg');
+}
+
+.about-header-writing {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0px 0px 70px;
+
+}
+
+.about-header-writing h1 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.about-header-writing p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* about us section 1 starts here */
+
+
+.aboutus-sect1-cont {
+    height: 570px;
+}
+
+.aboutus-sect1-top {
+    padding: 80px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutus-sect1-top h1 {
+    font-size: 45px;
+    font-family: var(--jobnamefont);
+}
+
+.aboutus-sect1-top p {
+    padding-top: 20px;
+    color: rgb(100, 97, 97);
+    font-weight: 400;
+    font-size: 17px;
+    font-family: var(--jobnamefont);
+
+}
+
+.aboutus-sect1-cont {
+    background-color: #EAF3FB;
+
+}
+
+.aboutus-sect1-middle {
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.aboutus-middle-slide {
+    margin: 0px 0px 40px 30px;
+}
+
+.aboutus-middle-detail {
+    background-color: white;
+    width: 410px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    transition: background-color 0.8s ease, color 0.8s ease;
+}
+
+.aboutus-middle-detail:hover {
+    background-color: #267ECE;
+    color: white;
+
+}
+
+.aboutus-middle-detail:hover h1,
+.aboutus-middle-detail:hover p {
+    color: white;
+}
+
+.aboutus-middle-detail h2 {
+    padding-bottom: 10px;
+    font-family: var(--jobnamefont);
+}
+
+.aboutus-middle-detail p {
+    transition: color 0.8s ease;
+    color: rgb(100, 97, 97);
+    font-family: var(--jobnamefont)
+}
+
+.about-middle-icon h1 {
+    color: black;
+    font-size: 50px;
+    margin-right: 23px;
+    transition: color 0.8s ease;
+
+}
+
+.slick-dots {
+    text-align: center;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #267ECE;
+    opacity: 1;
+    transform: scale(1.2);
+
+}
+
+.slick-prev li.slick-active button {
+    background-color: #267ECE;
+
+}
+
+
+/* section two starts */
+
+.about-sect2-cont {
+    padding: 60px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-sect2-textwith-image {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+}
+
+
+.about-sect2-textwith-image h1 {
+    font-size: 50px;
+    font-weight: 500;
+    font-family: var(--jobnamefont);
+}
+
+.about-topright-icon1 {
+    background-color: black;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    width: 100px;
+
+}
+
+.about-topright-icon1 h1 {
+    color: white;
+    width: 50px;
+}
+
+.about-topright-icon2 {
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    width: 100px;
+    border: 1px solid;
+    margin: 0px 20px 0px 30px;
+}
+
+.about-topright-icon2 h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.about-sect2-bottom {
+    margin-top: 80px;
+    display: flex;
+}
+
+.about-sect2-bottom div {
+    padding: 0px 50px 0px 50px;
+    margin-top: 50px;
+
+}
+.about-sect2-bottom hr{
+    margin: 60px 40px 30px 40px;
+
+}
+
+.about-sect2-bottom h1 {
+    font-size: 75px;
+    font-family: var(--jobnamefont);
+}
+
+.about-sect2-bottom p {
+    padding-top: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    font-family: var(--jobnamefont);
+    color: rgb(100, 97, 97);
+}
+
+
+/* section2 starts */
+
+
+.about-sect3-cont{
+    background-color: rgb(255, 196, 0);
+}
+
+.about-sect3-top{
+    margin-top: 60px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.about-sect3-top h1{
+    font-size: 46px;
+    font-family: var(--jobnamefont);
+}
+
+.about-sect3-top p{
+    padding: 35px 0px 15px 0px;
+    font-family: var(--jobnamefont);
+    color: rgb(100, 97, 97);
+}
+
+.about-sect3-bottom{
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.expert-team{
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.expert-team h1{
+    margin: 12px 0px 0px 5px;
+    font-family: var(--jobnamefont);
+}
+
+.expert-team p{
+    margin: 8px 0px 50px 5px;
+    color: rgb(100, 97, 97);
+    font-family: var(--jobnamefont);
+}

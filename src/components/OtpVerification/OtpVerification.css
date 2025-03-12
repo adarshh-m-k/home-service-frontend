@@ -1,0 +1,79 @@
+/* Main container for OTP verification */
+.otp-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #FFD700;
+}
+
+/* Container holding the OTP input and button */
+.otp-container {
+    background-color: #0f0f0f;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Title styling */
+.verify-email h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Input field for OTP */
+.otp-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid  #707070;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border 0.3s ease-in-out;
+}
+
+/* Focused state for OTP input */
+.otp-container input:focus {
+    border-color: #FFD700;
+}
+
+/* Button styling */
+.otp-container button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Button hover effect */
+.otp-container button:hover {
+    color: #FFD700;
+    background-color: #313539;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .otp-container {
+        padding: 20px;
+    }
+
+    .otp-container input {
+        font-size: 14px;
+    }
+
+    .otp-container button {
+        font-size: 16px;
+    }
+}

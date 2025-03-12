@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --themefont: "Edu AU VIC WA NT Arrows";
+}
+
+.signup-container {
+  display: flex;
+  align-items: center;
+
+}
+
+.signup-left-container {
+  width: 50%;
+
+}
+
+.signup-right-container {
+  width: 50%;
+  /* height: 720px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+}
+
+/* SignUp.css */
+
+/* Container for the entire page */
+.signup-container {
+  display: flex;
+  height: 100vh;
+  /* border: 5px solid; */
+  justify-content: center;
+  align-items: center;
+  background-color: #FFD700;
+}
+
+/* Left Container */
+.signup-left-container {
+  flex: 1;
+  /* background-color: #4f5d73; */
+  color: #0F0F0F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.left-container h2 {
+  font-size: 36px;
+  font-family: var(--themefont);
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.left-container p {
+  font-size: 19px;
+  color: #0F0F0F;
+  text-align: center;
+  padding: 0 20px;
+  font-style: italic;
+}
+
+/* Right Container */
+.signup-right-container {
+  flex: 1;
+  margin-right: 7px;
+  background-color: #0F0F0F;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.signup h1 {
+  text-align: center;
+  color: white;
+  /* font-size: 28px; */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.username,
+.mobile,
+.email,
+.password {
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Input Fields Styling */
+input {
+  background-color: #0F0F0F;
+  width: 280px;
+  background-color: #313539;
+  color: rgb(126, 125, 125);
+  padding: 12px 15px;
+  border: 1px solid #707070;
+  border-radius: 14px;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-left: 35px;
+  /* space for icons */
+}
+
+/* Input Focus Styling */
+input:focus {
+  border-color: #FFD700;
+  outline: none;
+}
+
+/* Icon Styling inside inputs */
+.username i,
+.mobile i,
+.email i,
+.password i {
+  position: absolute;
+  left: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #4f5d73;
+  font-size: 18px;
+}
+
+
+
+/* Submit Button */
+button {
+  width: 330px;
+  padding: 12px;
+  background-color: #FFD700;
+  color: #0F0F0F;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  color: #FFD700;
+  background-color: #313539;
+}
+
+.submitBtn {
+  margin-top: 10px;
+  /* margin-left: 40px; */
+}
+
+/* Link for already account */
+.already-account {
+  margin-left: 40px;
+  color: rgb(126, 125, 125);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.already-account a {
+  color: #4f5d73;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.already-account a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .signup-left-container,
+  .signup-right-container {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .signup h1 {
+    font-size: 24px;
+  }
+}
+
+/* Positioning icons */
+.username,
+.mobile,
+.email,
+.password {
+  position: relative;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="text"] {
+  padding-left: 35px;
+  /* Make room for icons */
+}
