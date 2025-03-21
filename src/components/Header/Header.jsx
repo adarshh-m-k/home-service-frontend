@@ -10,6 +10,7 @@ function Header() {
 
     let [search, setSearch] = useState(null);
     let [inputValue, setInputValue] = useState('');
+    let [menuOpen, setMenuOpen] = useState(false)
 
     let dispatch = useDispatch();
     let navigate = useNavigate();
@@ -86,9 +87,9 @@ function Header() {
                     </div>
                 </div>
 
-                <div className='navbar-details'>
+                <div className={`navbar-details ${menuOpen ? 'open' : ''}`}>
 
-                    <div className='navbar-list'>
+                    <div className='navbar-list' >
                         <ol>
                             <Link to={'/home'}>Home</Link>
                             <Link to={'/aboutus'}>About Us</Link>
@@ -105,7 +106,9 @@ function Header() {
                     </div>
 
                 </div>
-
+                <div className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>
+                    <i className="fas fa-bars"></i>
+                </div>
 
                 {/* <h1>{user?.email}</h1> */}
             </nav >

@@ -112,33 +112,102 @@
     color: white;
 }
 
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
 @media (max-width: 768px) {
     .navbar {
-        height: 260px;
-        flex-direction: column;
-        align-items: start;
-        padding-left: 20px;
+        gap: 30px;
+        /* flex-direction: column; */
+        padding: 10px;
+        height: 80px;
+        /* Allow navbar to grow vertically */
     }
 
-    .navbar-details ol {
-        gap: 0px;
-        flex-direction: column;
-    }
-
-    .search-inpt {
-        margin: 0;
-        width: 90%;
-    }
-    .profile h1 i {
-        cursor: pointer;
-        color: white;
+    .logo {
+        /* font-size: 13px; */
+        margin-left: 0;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .logo h1 {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .search {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .search-inpt {
+        width: 80%;
+        /* Make search input take most of the width */
+        font-size: 16px;
+    }
+
+    .navbar-details {
+        width: 20%;
+        flex-direction: column;
+        gap: 10px;
+        display: none;
+        position: absolute;
+        top: 100px;
+        right: 0;
+        background-color: rgb(255, 196, 0);
+        padding: 10px;
+        margin: 0;
+        border-radius: 5px;
+        box-shadow: -2px 0px 10px rgba(0, 0, 0, 0.2);
+        transition: transfrom 0.3s ease;
+   
+
+
+    }
+
+    .navbar-details.open {
+        display: block;
+       
+
+    }
+
+    .navbar-details ol {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
     }
 
     .navbar-details ol a {
-        color: white;
+        font-size: 10px;
     }
+
+    /* Profile Icon */
+    .profile {
+        font-size: 25px;
+    }
+
+    /* Hamburger Button */
+    .hamburger {
+        display: block;
+        font-size: 25px;
+        color: black;
+        /* margin-top: 10px; */
+        cursor: pointer;
+    }
+
+    /* Ensure the menu is open/close when hamburger is clicked */
+    .profile {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    /* Adjust the menu toggle animation for smooth transition */
+    /* .navbar-details {
+        transition: all 0.5s ease;
+    } */
 }
