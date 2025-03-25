@@ -1,10 +1,7 @@
-// import React, { useState } from 'react'
-// import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Home.css'
 import { Apidata } from '../BaseApi'
-import { Link, useNavigate } from 'react-router-dom'
-
+import { useNavigate } from 'react-router-dom'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

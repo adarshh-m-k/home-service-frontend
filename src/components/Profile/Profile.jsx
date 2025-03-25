@@ -1,62 +1,24 @@
-// import React, { useEffect } from 'react'
-// import { useParams } from 'react-router-dom'
-
-// function Profile() {
-
-//   useEffect(() => {
-//     (async () => {
-//       try {
-//         let result = await Apidata.get(`/user/profile/${id}`)
-//         console.log(result.data);
-//         setGetData(result.data.data)
-
-//       } catch (error) {
-
-//       }
-//     })()
-//   }, [])
-//   return (
-//     <div>{ }</div>
-//   )
-// }
-
-// export default Profile
-
-
-
 import React, { useEffect, useState } from 'react';
 import './Profile.css'
 import { updateUser } from '../Redux/Redux';
-import { useDispatch, useSelector } from 'react-redux';  // Access Redux state
+import { useDispatch, useSelector } from 'react-redux';  
 import { Apidata } from '../BaseApi';
 
 function Profile() {
-  // Get the user details from Redux state
   const dispatch = useDispatch();
-  const user = useSelector((state) => state.user); // Adjust based on how you're storing user data
+  const user = useSelector((state) => state.user);
 
-  // Fallback if user data is not available
-  // const [userData, setUserData] = useState(null);
   const [formData, setFormData] = useState({
     address: '',
     gender: '',
     dob: '',
   });
 
-  // State to toggle edit mode
+ 
   const [isEditable, setIsEditable] = useState(false);
 
   useEffect(() => {
-    // If user data is already in Redux, use it
-    // if (user) {
-    //   // setUserData(user);
-    //   // console.log("User from Redux:", user);
 
-
-    // } else {
-    //   // Optionally, you can make an API call here to fetch user details if not available in Redux
-    //   console.log('User data not found');
-    // }
 
     console.log("User state updated:", user);
 
@@ -74,9 +36,7 @@ function Profile() {
     }
   }, [user]);
 
-  // if (!user || Object.keys(user).length === 0) {
-  //   return <div>Loading...</div>; // Show loading while waiting for user data
-  // }
+  
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -126,10 +86,6 @@ function Profile() {
   }
   return (
     <div className='profile-section-cont'>
-      {/* <div className='profile-cont-top' >
-        <h1>Personal Information</h1>
-
-      </div> */}
       <div className='profile-cont'>
         <div className='profile-left'>
           <h1>Personal Information</h1>
@@ -190,7 +146,7 @@ function Profile() {
               value={formData.gender}
               onChange={handleChange}
               disabled={!isEditable}
-              style={{ width: '400px', height: '47px', borderRadius: '8px', paddingLeft: '13px' }}>
+              style={{ width: '200px', height: '47px', borderRadius: '8px', paddingLeft: '13px' }}>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
             </select>
