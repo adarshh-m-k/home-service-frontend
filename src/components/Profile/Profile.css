@@ -84,18 +84,23 @@
     .profile-cont input {
         width: 200px;
     }
-    
+
 
     .profile-left {
         padding-left: 40px;
 
     }
-    .profile-left h1{
+
+    .profile-left h1 {
         font-size: 30px;
     }
 
     .profile-right {
-        margin:0px 0px 0px 40px;
+        margin: 0px 0px 0px 40px;
     }
 
+    .button-group {
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
 }
